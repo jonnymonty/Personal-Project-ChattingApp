@@ -1,0 +1,13 @@
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\bin\Release\ChattingApp.Core.dll
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\bin\Release\ChattingApp.Core.pdb
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\bin\Release\Newtonsoft.Json.dll
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\bin\Release\Ninject.dll
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\bin\Release\Newtonsoft.Json.pdb
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\bin\Release\Newtonsoft.Json.xml
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\bin\Release\Ninject.xml
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\obj\Release\ChattingApp.Core.csprojResolveAssemblyReference.cache
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\obj\Release\ChattingApp.Core.csproj.CoreCompileInputs.cache
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\obj\Release\ChattingApp.Core.csproj.Fody.CopyLocal.cache
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\obj\Release\ChattingApp.Core.csproj.CopyComplete
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\obj\Release\ChattingApp.Core.dll
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\ChattingApp\ChattingApp.Core\obj\Release\ChattingApp.Core.pdb
