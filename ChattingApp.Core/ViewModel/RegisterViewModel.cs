@@ -75,7 +75,7 @@ namespace ChattingApp.Core
             //return;
 
             // Go to login page
-            IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Login);
+            IoC.Application.GoToPage(ApplicationPage.Login);
 
             await Task.Delay(1);
         }

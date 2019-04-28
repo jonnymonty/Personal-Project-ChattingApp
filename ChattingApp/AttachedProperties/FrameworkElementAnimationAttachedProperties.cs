@@ -115,6 +115,28 @@ namespace ChattingApp
     }
 
     /// <summary>
+    /// Animates a framework element sliding in from the bottom on show
+    /// and sliding out to the bottom on hide
+    /// NOTE: Keeps the margin
+    /// </summary>
+    public class AnimateSlideInFromBottomMarginProperty : AnimateBaseProperty<AnimateSlideInFromBottomMarginProperty>
+    {
+        protected override async void DoAnimation(FrameworkElement element, bool value)
+        {
+            if (value)
+            {
+                // Animate in
+                await element.SlideAndFadeInFromBottomAsync(FirstLoad ? 0 : 0.3f, keepMargin: true);
+            }
+            else
+            {
+                // Animate out
+                await element.SlideAndFadeOutToLeftAsync(FirstLoad ? 0 : 0.3f, keepMargin: true);
+            }
+        }
+    }
+
+    /// <summary>
     /// Animates a framework element fading in on show
     /// and fading out on hide
     /// </summary>

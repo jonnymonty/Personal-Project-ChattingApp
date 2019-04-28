@@ -64,7 +64,7 @@ namespace ChattingApp.Core
                 await Task.Delay(1000);
 
                 // Go to chat page
-                IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Chat);
+                IoC.Application.GoToPage(ApplicationPage.Chat);
 
                 //var email = this.Email;
                 //var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
@@ -82,7 +82,7 @@ namespace ChattingApp.Core
             //return;
 
             // Go to register page
-            IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Register);
+            IoC.Application.GoToPage(ApplicationPage.Register);
 
             await Task.Delay(1);
         }

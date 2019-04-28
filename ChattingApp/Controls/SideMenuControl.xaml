@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ChattingApp"
-             xmlns:core="clr-namespace:ChattingApp.Core"
+             xmlns:core="clr-namespace:ChattingApp.Core;assembly=ChattingApp.Core"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
 
@@ -37,7 +37,12 @@
                         </StackPanel>
 
                         <!-- Settings Button -->
-                        <Button Grid.Column="2" Foreground="{StaticResource WordDarkBlueBrush}" Style="{StaticResource IconButton}" Content="{StaticResource FontAwesomeCogIcon}" />
+                        <Button Grid.Column="2" 
+                                Foreground="{StaticResource WordDarkBlueBrush}" 
+                                Style="{StaticResource IconButton}" 
+                                Content="{StaticResource FontAwesomeCogIcon}" 
+                                Command="{Binding SettingsViewModel.OpenCommand, Source={x:Static local:ViewModelLocator.Instance}}"
+                        />
 
                     </Grid>
 
