@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ChattingApp"
-             mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="500">
+             mc:Ignorable="d">
     <Border Background="{StaticResource BackgroundVeryLightBrush}" 
             Padding="15">
         <Grid>
@@ -42,6 +41,65 @@
             </Grid>
 
             <!-- Main Content -->
+            <Grid Grid.Row="1"
+                  Width="700"
+                  VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="260" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <!-- Profile Picture-->
+                <Grid Margin="0 0 10 0"
+                      Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+
+                    <!-- Mask for rounded corners -->
+                    <Border CornerRadius="8"
+                            Name="Mask"
+                            Background="White"
+                            />
+
+                    <!-- Image -->
+                    <Grid>
+                        <Grid.OpacityMask>
+                            <VisualBrush Visual="{Binding ElementName=Mask}" />
+                        </Grid.OpacityMask>
+                    </Grid>
+                    
+                    <Image Source="/Images/Samples/rusty.jpg" Stretch="UniformToFill" />
+
+                </Grid>
+
+                <!-- Profile Details -->
+                <Grid Grid.Column="1"
+                      local:PanelChildMarginProperty.Value="15 8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Labels -->
+                    <TextBlock Text="Name" FontFamily="{StaticResource LatoRegular}" />
+                    <TextBlock Text="Username" FontFamily="{StaticResource LatoRegular}" Grid.Row="1"/>
+                    <TextBlock Text="Password" FontFamily="{StaticResource LatoRegular}" Grid.Row="2" />
+                    <TextBlock Text="Email" FontFamily="{StaticResource LatoRegular}" Grid.Row="3" />
+                    
+                    <!-- Label Values -->
+                    <TextBlock Text="Luke Malpass" Grid.Column="1" />
+                    <TextBlock Text="luke" Grid.Row="1" Grid.Column="1" />
+                    <TextBlock Text="*******" Grid.Row="2" Grid.Column="1" />
+                    <TextBlock Text="contact@gmail.com" Grid.Row="3" Grid.Column="1" />
+                </Grid>
+            </Grid>
 
         </Grid>
     </Border>
