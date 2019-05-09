@@ -71,34 +71,12 @@
                 </Grid>
 
                 <!-- Profile Details -->
-                <Grid Grid.Column="1"
-                      local:PanelChildMarginProperty.Value="15 8">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    
-                    <!-- Labels -->
-                    <TextBlock Text="Name" FontFamily="{StaticResource LatoRegular}" />
-                    <TextBlock Text="Username" FontFamily="{StaticResource LatoRegular}" Grid.Row="1"/>
-                    <TextBlock Text="Password" FontFamily="{StaticResource LatoRegular}" Grid.Row="2" />
-                    <TextBlock Text="Email" FontFamily="{StaticResource LatoRegular}" Grid.Row="3" />
-                    
-                    <!-- Label Values -->
-                    <TextBlock Text="Luke Malpass" Grid.Column="1" />
-                    <TextBlock Text="luke" Grid.Row="1" Grid.Column="1" />
-                    <TextBlock Text="*******" Grid.Row="2" Grid.Column="1" />
-                    <TextBlock Text="contact@gmail.com" Grid.Row="3" Grid.Column="1" />
-                </Grid>
+                <StackPanel Grid.Column="1">
+                    <local:TextEntryControl />
+                    <local:TextEntryControl />
+                    <local:TextEntryControl />
+                    <local:TextEntryControl />
+                </StackPanel>
             </Grid>
 
         </Grid>
