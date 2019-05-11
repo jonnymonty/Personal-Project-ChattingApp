@@ -23,3 +23,4 @@ E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-Chattin
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\ChattingApp.Core.csproj.CopyComplete
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\ChattingApp.Core.dll
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\ChattingApp.Core.pdb
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\ChattingApp.Core.csprojResolveAssemblyReference.cache

@@ -7,12 +7,16 @@
              xmlns:core="clr-namespace:ChattingApp.Core;assembly=ChattingApp.Core"
              mc:Ignorable="d" 
              d:DataContext="{x:Static core:TextEntryDesignModel.Instance}"
-             DataContext="{x:Static core:TextEntryDesignModel.Instance}"
              >
     <!-- Grey underline -->
     <Border BorderBrush="{StaticResource ForegroundDarkBrush}"
             BorderThickness="0 0 0 0.4">
-        <Grid Background="{StaticResource ForegroundLightBrush}">
+        <Grid Background="{StaticResource BackgroundVeryLightBrush}">
+            
+            <!-- Double click to edit -->
+            <Grid.InputBindings>
+                <MouseBinding MouseAction="LeftDoubleClick" Command="{Binding EditCommand}" />
+            </Grid.InputBindings>
 
             <!-- Hover over to show edit button -->
             <Grid.Triggers>
@@ -40,22 +44,25 @@
             
             <!-- Label -> Name -> Buttons -->
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Name="LabelColumnDefinition" Width="Auto" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
             <!-- Label -->
             <TextBlock Text="{Binding Label}"
+                       Name="Label"
                        Margin="15 12"
+                       HorizontalAlignment="Left"
                        VerticalAlignment="Center"
                        FontFamily="{StaticResource LatoRegular}"/>
             
             <!-- Edit Content -->
-            <TextBox Text="{Binding EditedText}"
+            <TextBox Text="{Binding EditedText, UpdateSourceTrigger=PropertyChanged}"
                      local:AnimateFadeInProperty.Value="{Binding Editing}"
                      local:FocusAndSelectProperty.Value="{Binding Editing}"
                      Grid.Column="1" 
+                     Opacity="0"
                      Padding="2"
                      Margin="11 10 15 8"
                      FontSize="{StaticResource FontSizeRegular}"/>

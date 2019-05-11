@@ -57,6 +57,12 @@ namespace ChattingApp.Core
             // Create commands
             OpenCommand = new RelayCommand(Open);
             CloseCommand = new RelayCommand(Close);
+
+            // TODO: Remove this with real information pulled from our database
+            Name = new TextEntryViewModel { Label = "Name", OriginalText = "Luke Melrose" };
+            Username = new TextEntryViewModel { Label = "Username", OriginalText = "luke" };
+            Password = new TextEntryViewModel { Label = "Password", OriginalText = "*******" };
+            Email = new TextEntryViewModel { Label = "Email", OriginalText = "lukem@gmail.com" };
         }
 
         #endregion
