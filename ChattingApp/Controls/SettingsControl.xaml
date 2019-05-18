@@ -53,6 +53,7 @@
                 
                 <!-- Profile Picture-->
                 <Grid Margin="0 0 30 0"
+                      VerticalAlignment="Top"
                       Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
 
                     <!-- Mask for rounded corners -->
@@ -78,8 +79,13 @@
                             >
                     <local:TextEntryControl DataContext="{Binding Name}" />
                     <local:TextEntryControl DataContext="{Binding Username}" />
-                    <local:TextEntryControl DataContext="{Binding Password}" />
+                    <local:PasswordEntryControl DataContext="{Binding Password}" />
                     <local:TextEntryControl DataContext="{Binding Email}" />
+
+                    <Button Content="Logout"
+                            FontSize="{StaticResource FontSizeRegular}"
+                            
+                            />
                 </StackPanel>
             </Grid>
 

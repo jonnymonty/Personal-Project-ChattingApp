@@ -29,7 +29,7 @@ namespace ChattingApp.Core
         {
             Name = new TextEntryViewModel { Label = "Name", OriginalText = "Luke Melrose" };
             Username = new TextEntryViewModel { Label = "Username", OriginalText = "luke" };
-            Password = new TextEntryViewModel { Label = "Password", OriginalText = "*******" };
+            Password = new PasswordEntryViewModel { Label = "Password", FakePassword = "********" };
             Email = new TextEntryViewModel { Label = "Email", OriginalText = "lukem@gmail.com" };
         }
 

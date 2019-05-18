@@ -114,3 +114,5 @@ E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-Chattin
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\obj\Debug\ChattingApp.csproj.CopyComplete
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\obj\Debug\ChattingApp.exe
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\obj\Debug\ChattingApp.pdb
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\obj\Debug\Controls\Input\PasswordEntryControl.g.cs
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\obj\Debug\Controls\Input\PasswordEntryControl.baml

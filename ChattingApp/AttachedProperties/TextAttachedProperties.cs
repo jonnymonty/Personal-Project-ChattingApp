@@ -33,16 +33,30 @@ namespace ChattingApp
         public override void OnValueChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
         {
             // If we don't have a control, return
-            if (!(sender is TextBoxBase control))
-                return;
-
-            if ((bool)e.NewValue)
+            if (sender is TextBoxBase control)
             {
-                // Focus this control
-                control.Focus();
 
-                // Select all
-                control.SelectAll();
+                if ((bool)e.NewValue)
+                {
+                    // Focus this control
+                    control.Focus();
+
+                    // Select all
+                    control.SelectAll();
+                }
+            }
+
+            if (sender is PasswordBox password)
+            {
+
+                if ((bool)e.NewValue)
+                {
+                    // Focus this control
+                    password.Focus();
+
+                    // Select all
+                    password.SelectAll();
+                }
             }
         }
     }
