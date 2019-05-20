@@ -58,6 +58,11 @@ namespace ChattingApp.Core
         /// </summary>
         public ICommand LogoutCommand { get; set; }
 
+        /// <summary>
+        /// The command to clear the users data from the viewmodel
+        /// </summary>
+        public ICommand ClearUserDataCommand { get; set; }
+
         #endregion
 
         #region Constructor
@@ -68,9 +73,11 @@ namespace ChattingApp.Core
             OpenCommand = new RelayCommand(Open);
             CloseCommand = new RelayCommand(Close);
             LogoutCommand = new RelayCommand(Logout);
+            ClearUserDataCommand = new RelayCommand(ClearUserData);
 
-            // TODO: Remove this with real information pulled from our database
-            Name = new TextEntryViewModel { Label = "Name", OriginalText = "Luke Melrose" };
+            // TODO: Remove this once done working on chatting page
+            // TODO: Remove this with real information pulled from database
+            Name = new TextEntryViewModel { Label = "Name", OriginalText = $"Luke Melrose" };
             Username = new TextEntryViewModel { Label = "Username", OriginalText = "luke" };
             Password = new PasswordEntryViewModel { Label = "Password", FakePassword = "********" };
             Email = new TextEntryViewModel { Label = "Email", OriginalText = "lukem@gmail.com" };
@@ -109,9 +116,22 @@ namespace ChattingApp.Core
             // TODO: Clear any user data/cache
 
             // Clean all application level viewmodels that contain any information about the current user
+            ClearUserData();
 
             // Bring user to login page
             IoC.Application.GoToPage(ApplicationPage.Login);
+        }
+
+        /// <summary>
+        /// Clears any data specific to the current user
+        /// </summary>
+        public void ClearUserData()
+        {
+            // Clear all viewmodels containing the users info
+            this.Name = null;
+            this.Username = null;
+            this.Password = null;
+            this.Email = null;
         }
     }
 }

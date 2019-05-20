@@ -82,7 +82,8 @@
                     <local:PasswordEntryControl DataContext="{Binding Password}" />
                     <local:TextEntryControl DataContext="{Binding Email}" />
 
-                    <Button Content="Logout"
+                    <Button Content="{Binding LogoutButtonText}"
+                            Command="{Binding LogoutCommand}"
                             FontSize="{StaticResource FontSizeRegular}"
                             
                             />

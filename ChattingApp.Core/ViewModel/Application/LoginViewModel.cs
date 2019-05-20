@@ -61,7 +61,17 @@ namespace ChattingApp.Core
         {
             await RunCommandAsync(() => this.LoginIsRunning, async () => {
 
+                // TODO: Fake a login...
                 await Task.Delay(1000);
+
+                // OK successfully logged in ... now get users data
+                //TODO: Ask server for users info
+
+                // TODO: Remove this with real information pulled from database
+                IoC.Settings.Name = new TextEntryViewModel { Label = "Name", OriginalText = $"Luke Melrose {DateTime.Now.ToLocalTime()}" };
+                IoC.Settings.Username = new TextEntryViewModel { Label = "Username", OriginalText = "luke" };
+                IoC.Settings.Password = new PasswordEntryViewModel { Label = "Password", FakePassword = "********" };
+                IoC.Settings.Email = new TextEntryViewModel { Label = "Email", OriginalText = "lukem@gmail.com" };
 
                 // Go to chat page
                 IoC.Application.GoToPage(ApplicationPage.Chat);
