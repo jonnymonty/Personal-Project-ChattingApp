@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace ChattingApp.Core
 {
@@ -11,6 +12,8 @@ namespace ChattingApp.Core
     /// </summary>
     public class ChatListItemViewModel : BaseViewModel
     {
+        #region Public Properties
+
         /// <summary>
         /// The display name of this chat list
         /// </summary>
@@ -41,5 +44,114 @@ namespace ChattingApp.Core
         /// True if this item is currently selected
         /// </summary>
         public bool IsSelected { get; set; }
+
+        #endregion
+
+        #region Public Commands
+
+        /// <summary>
+        /// Opens the current message thread
+        /// </summary>
+        public ICommand OpenMessageCommand { get; set; }
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        public ChatListItemViewModel()
+        {
+            // Create commands
+            OpenMessageCommand = new RelayCommand(OpenMessage);
+        }
+
+        #endregion
+
+        #region Command Methods
+
+        public void OpenMessage()
+        {
+            if (Name == "Jesse")
+            {
+                IoC.Application.GoToPage(ApplicationPage.Login, new LoginViewModel
+                {
+                    Email = "jesse@helloworld.com"
+                });
+                return;
+            }
+            IoC.Application.GoToPage(ApplicationPage.Chat, new ChatMessageListViewModel
+            {
+                Items = new List<ChatMessageListItemViewModel>
+                {
+                    new ChatMessageListItemViewModel
+                    {
+                        Message = this.Message,
+                        Initials = this.Initials,
+                        MessageSentTime = DateTime.UtcNow,
+                        ProfilePictureRGB = "FF00FF",
+                        SenderName = "Luke",
+                        SentByMe = true,
+                    },
+                    new ChatMessageListItemViewModel
+                    {
+                        Message = "A received message",
+                        Initials = this.Initials,
+                        MessageSentTime = DateTime.UtcNow,
+                        ProfilePictureRGB = "FF0000",
+                        SenderName = "Parnell",
+                        SentByMe = false,
+                    },
+                    new ChatMessageListItemViewModel
+                    {
+                        Message = this.Message,
+                        Initials = this.Initials,
+                        MessageSentTime = DateTime.UtcNow,
+                        ProfilePictureRGB = "FF00FF",
+                        SenderName = "Luke",
+                        SentByMe = true,
+                    },
+                    new ChatMessageListItemViewModel
+                    {
+                        Message = "A received message",
+                        Initials = this.Initials,
+                        MessageSentTime = DateTime.UtcNow,
+                        ProfilePictureRGB = "FF0000",
+                        SenderName = "Parnell",
+                        SentByMe = false,
+                    },
+                    new ChatMessageListItemViewModel
+                    {
+                        Message = this.Message,
+                        Initials = this.Initials,
+                        MessageSentTime = DateTime.UtcNow,
+                        ProfilePictureRGB = "FF00FF",
+                        SenderName = "Luke",
+                        SentByMe = true,
+                    },
+                    new ChatMessageListItemViewModel
+                    {
+                        Message = "A received message",
+                        Initials = this.Initials,
+                        MessageSentTime = DateTime.UtcNow,
+                        ProfilePictureRGB = "FF0000",
+                        SenderName = "Parnell",
+                        SentByMe = false,
+                    },
+                    new ChatMessageListItemViewModel
+                    {
+                        Message = this.Message,
+                        Initials = this.Initials,
+                        MessageSentTime = DateTime.UtcNow,
+                        ProfilePictureRGB = "FF00FF",
+                        SenderName = "Luke",
+                        SentByMe = true,
+                    }
+                }
+            });
+        }
+
+        #endregion
     }
 }

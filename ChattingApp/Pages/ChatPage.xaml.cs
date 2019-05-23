@@ -22,7 +22,19 @@ namespace ChattingApp
     /// </summary>
     public partial class ChatPage : BasePage<ChatMessageListViewModel>
     {
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public ChatPage()
+        {
+            InitializeComponent();
+        }
+
+        /// <summary>
+        /// Constructor with specific view model 
+        /// </summary>
+        /// <param name="specificViewModel">The specific view model to use for this page</param>
+        public ChatPage(ChatMessageListViewModel specificViewModel) : base(specificViewModel)
         {
             InitializeComponent();
         }
