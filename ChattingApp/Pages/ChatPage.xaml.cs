@@ -11,6 +11,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -22,6 +23,8 @@ namespace ChattingApp
     /// </summary>
     public partial class ChatPage : BasePage<ChatMessageListViewModel>
     {
+        #region Constructor
+
         /// <summary>
         /// Default Constructor
         /// </summary>
@@ -38,5 +41,26 @@ namespace ChattingApp
         {
             InitializeComponent();
         }
+
+        #endregion
+
+        #region Override Methods
+
+        /// <summary>
+        /// Fired when the view model changes
+        /// </summary>
+        protected override void OnViewModelChanged()
+        {
+            // Make sure UI exists first
+            if (ChatMessageList == null)
+                return;
+
+            // Fade in the chat message list
+            var storyboard = new Storyboard();
+            storyboard.AddFadeIn(1);
+            storyboard.Begin(ChatMessageList);
+        }
+
+        #endregion
     }
 }
