@@ -77,18 +77,31 @@ namespace ChattingApp
             var textbox = sender as TextBox;
 
             // Check if we have pressed enter and control
-            if (e.Key == Key.Enter && Keyboard.Modifiers.HasFlag(ModifierKeys.Control))
+            if (e.Key == Key.Enter)
             {
-                // Add a new line at the point where the cursor is
-                var index = textbox.CaretIndex;
+                // If we have control pressed...
+                if (Keyboard.Modifiers.HasFlag(ModifierKeys.Control))
+                {
 
-                // Insert the new line
-                textbox.Text = textbox.Text.Insert(index, Environment.NewLine);
+                    // Add a new line at the point where the cursor is
+                    var index = textbox.CaretIndex;
 
-                // Shift the caret forward to the newline
-                textbox.CaretIndex = index + Environment.NewLine.Length;
+                    // Insert the new line
+                    textbox.Text = textbox.Text.Insert(index, Environment.NewLine);
 
-                // Mark this key as handled by us
+                    // Shift the caret forward to the newline
+                    textbox.CaretIndex = index + Environment.NewLine.Length;
+
+                    // Mark this key as handled by us
+                    e.Handled = true;
+                }
+                else
+                {
+                    // Send the message
+                    ViewModel.Send();
+                }
+
+                // Mark the key as handled
                 e.Handled = true;
             }
         }

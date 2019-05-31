@@ -115,6 +115,7 @@
                      BorderThickness="0"
                      Padding="0 10 10 10"
                      AcceptsTab="True"
+                     AcceptsReturn="True"
                      PreviewKeyDown="MessageText_PreviewKeyDown"
                      />
 
@@ -134,7 +135,6 @@
                 <Button Content="Send"
                         Padding="8"
                         Focusable="False"
-                        IsDefault="True"
                         Command="{Binding SendCommand}"
                         Background="{StaticResource WordGreenBrush}"
                         FontSize="{StaticResource FontSizeRegular}"
