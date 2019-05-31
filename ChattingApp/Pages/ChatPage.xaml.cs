@@ -65,5 +65,32 @@ namespace ChattingApp
         }
 
         #endregion
+
+        /// <summary>
+        /// Preview the input into the message box and respond as required
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MessageText_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            // get the text box
+            var textbox = sender as TextBox;
+
+            // Check if we have pressed enter and control
+            if (e.Key == Key.Enter && Keyboard.Modifiers.HasFlag(ModifierKeys.Control))
+            {
+                // Add a new line at the point where the cursor is
+                var index = textbox.CaretIndex;
+
+                // Insert the new line
+                textbox.Text = textbox.Text.Insert(index, Environment.NewLine);
+
+                // Shift the caret forward to the newline
+                textbox.CaretIndex = index + Environment.NewLine.Length;
+
+                // Mark this key as handled by us
+                e.Handled = true;
+            }
+        }
     }
 }
