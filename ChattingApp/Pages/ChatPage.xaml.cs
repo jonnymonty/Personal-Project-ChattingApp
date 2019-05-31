@@ -59,6 +59,9 @@ namespace ChattingApp
             var storyboard = new Storyboard();
             storyboard.AddFadeIn(1);
             storyboard.Begin(ChatMessageList);
+
+            // Make the message box focused
+            MessageText.Focus();
         }
 
         #endregion

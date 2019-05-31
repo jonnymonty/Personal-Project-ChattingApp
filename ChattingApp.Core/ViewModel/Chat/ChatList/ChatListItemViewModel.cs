@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Collections.ObjectModel;
 
 namespace ChattingApp.Core
 {
@@ -83,7 +84,7 @@ namespace ChattingApp.Core
             }
             IoC.Application.GoToPage(ApplicationPage.Chat, new ChatMessageListViewModel
             {
-                Items = new List<ChatMessageListItemViewModel>
+                Items = new ObservableCollection<ChatMessageListItemViewModel>
                 {
                     new ChatMessageListItemViewModel
                     {
