@@ -148,6 +148,19 @@ namespace ChattingApp.Core
                         ProfilePictureRGB = "FF00FF",
                         SenderName = "Luke",
                         SentByMe = true,
+                    },
+                    new ChatMessageListItemViewModel
+                    {
+                        Message = "A received message",
+                        ImageAttachment = new ChatMessageListItemImageAttachmentViewModel
+                        {
+                            ThumbnailUrl = "http://anywhere"
+                        },
+                        Initials = this.Initials,
+                        MessageSentTime = DateTime.UtcNow,
+                        ProfilePictureRGB = "FF0000",
+                        SenderName = "Parnell",
+                        SentByMe = false,
                     }
                 }
             });
