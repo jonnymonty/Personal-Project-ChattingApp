@@ -76,6 +76,6 @@ namespace ChattingApp.Core
         /// <summary>
         /// A flag indicating if we have an image attached to this message
         /// </summary>
-        public bool HasImageAttachment => ImageAttachment != null;
+        public bool HasImageAttachment => ImageAttachment != null; 
     }
 }
