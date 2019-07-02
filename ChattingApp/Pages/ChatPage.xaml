@@ -74,11 +74,12 @@
 
                 <!-- Close search button -->
                 <Button Style="{StaticResource IconGrowButton}"
+                        Foreground="{StaticResource WordOrangeBrush}"
                         Content="{StaticResource FontAwesomeCloseIcon}"
                         Command="{Binding CloseSearchCommand}" />
 
                 <!-- Search box -->
-                <TextBox Grid.Column="2"
+                <TextBox Grid.Column="1"
                          local:FocusProperty.Value="{Binding SearchIsOpen}"
                          Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
                          Tag="Search text..."

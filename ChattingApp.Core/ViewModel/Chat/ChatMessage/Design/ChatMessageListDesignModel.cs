@@ -28,6 +28,8 @@ namespace ChattingApp.Core
         /// </summary>
         public ChatMessageListDesignModel()
         {
+            DisplayTitle = "Parnell";
+
             Items = new ObservableCollection<ChatMessageListItemViewModel>
             {
                 new ChatMessageListItemViewModel
