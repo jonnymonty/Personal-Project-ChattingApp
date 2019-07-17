@@ -1,0 +1,10 @@
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.csproj.CoreCompileInputs.cache
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.AssemblyInfoInputs.cache
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.AssemblyInfo.cs
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.dll
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.pdb
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.csprojResolveAssemblyReference.cache
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\bin\Debug\netstandard2.0\ChattingApp.Core.deps.json
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\bin\Debug\netstandard2.0\ChattingApp.Core.dll
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\bin\Debug\netstandard2.0\ChattingApp.Core.pdb
+E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.csproj.Fody.CopyLocal.cache
