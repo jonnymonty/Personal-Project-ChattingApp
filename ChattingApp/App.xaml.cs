@@ -26,6 +26,14 @@ namespace ChattingApp
             // Setup the main application
             ApplicationSetup();
 
+            // Log it
+            IoC.Logger.Log("This is debug...", LogLevel.Debug);
+            IoC.Logger.Log("This is error...", LogLevel.Error);
+            IoC.Logger.Log("This is informative...", LogLevel.Informative);
+            IoC.Logger.Log("This is success...", LogLevel.Success);
+            IoC.Logger.Log("This is verbose...", LogLevel.Verbose);
+            IoC.Logger.Log("This is warning...", LogLevel.Warning);
+
             // Show the main window
             Current.MainWindow = new MainWindow();
             Current.MainWindow.Show();
@@ -41,6 +49,9 @@ namespace ChattingApp
 
             // Bind a UI Manager
             IoC.Kernel.Bind<IUIManager>().ToConstant(new UIManager());
+
+            // Bind a logger
+            IoC.Kernel.Bind<ILogFactory>().ToConstant(new BaseLogFactory());
         }
     }
 }

@@ -8,3 +8,13 @@ E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-Chattin
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\bin\Debug\netstandard2.0\ChattingApp.Core.dll
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\bin\Debug\netstandard2.0\ChattingApp.Core.pdb
 E:\Users\Jonathan Monty\Desktop\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.csproj.Fody.CopyLocal.cache
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\bin\Debug\netstandard2.0\ChattingApp.Core.deps.json
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\bin\Debug\netstandard2.0\ChattingApp.Core.dll
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\bin\Debug\netstandard2.0\ChattingApp.Core.pdb
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.csprojResolveAssemblyReference.cache
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.csproj.CoreCompileInputs.cache
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.AssemblyInfoInputs.cache
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.AssemblyInfo.cs
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.csproj.Fody.CopyLocal.cache
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.dll
+E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp.Core\obj\Debug\netstandard2.0\ChattingApp.Core.pdb

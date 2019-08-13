@@ -971,11 +971,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\Jonathan Monty\\Desktop\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\ChattingApp.Core.csproj",
+      "projectUniqueName": "E:\\Jonathan Monty\\Documents\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\ChattingApp.Core.csproj",
       "projectName": "ChattingApp.Core",
-      "projectPath": "E:\\Users\\Jonathan Monty\\Desktop\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\ChattingApp.Core.csproj",
+      "projectPath": "E:\\Jonathan Monty\\Documents\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\ChattingApp.Core.csproj",
       "packagesPath": "C:\\Users\\Jonathan Monty\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\Jonathan Monty\\Desktop\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\obj\\",
+      "outputPath": "E:\\Jonathan Monty\\Documents\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
