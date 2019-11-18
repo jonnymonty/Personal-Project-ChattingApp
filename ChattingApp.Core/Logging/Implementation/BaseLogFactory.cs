@@ -49,10 +49,16 @@ namespace ChattingApp.Core
         /// <summary>
         /// Default constructor
         /// </summary>
-        public BaseLogFactory()
+        /// <param name="loggers">The loggers to add to the factory, on top of the stock loggers already included</param>
+        public BaseLogFactory(ILogger[] loggers = null)
         {
             // Add the console logger by default
             AddLogger(new ConsoleLogger());
+
+            // Add any others passed in
+            if (loggers != null)
+                foreach (var logger in loggers)
+                    AddLogger(logger);
         }
 
         #endregion
@@ -99,7 +105,12 @@ namespace ChattingApp.Core
         /// <param name="origin">The method/function this message was logged in</param>
         /// <param name="filePath">The code filename that this message was logged from</param>
         /// <param name="lineNumber">The line of code in the filename this message was logged from</param>
-        public void Log(string message, LogLevel level = LogLevel.Informative, [CallerMemberName] string origin = "", [CallerFilePath] string filePath = "", [CallerLineNumber] int lineNumber = 0)
+        public void Log(
+            string message, LogLevel 
+            level = LogLevel.Informative, 
+            [CallerMemberName] string origin = "", 
+            [CallerFilePath] string filePath = "", 
+            [CallerLineNumber] int lineNumber = 0)
         {
             // If we should not log the message as the level is too low...
             if ((int)level < (int)LogOutputLevel)

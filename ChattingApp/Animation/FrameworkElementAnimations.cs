@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChattingApp.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -205,7 +206,7 @@ namespace ChattingApp
             element.Unloaded += (s, e) => unloaded = true;
 
             // Run a loop off the caller thread
-            Task.Run(async () =>
+            IoC.Task.Run(async () =>
             {
                 // While the element is still available, recheck the size
                 // after every loop in case the container was resized

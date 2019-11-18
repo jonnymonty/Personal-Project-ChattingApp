@@ -971,9 +971,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Jonathan Monty\\Documents\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\ChattingApp.Core.csproj",
-      "projectName": "ChattingApp.Core",
-      "projectPath": "E:\\Jonathan Monty\\Documents\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\ChattingApp.Core.csproj",
+      "projectUniqueName": "E:\\Jonathan Monty\\Documents\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\Async.csproj",
+      "projectName": "Async",
+      "projectPath": "E:\\Jonathan Monty\\Documents\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\Async.csproj",
       "packagesPath": "C:\\Users\\Jonathan Monty\\.nuget\\packages\\",
       "outputPath": "E:\\Jonathan Monty\\Documents\\Desktop workspace\\Sites\\Personal-Project-ChattingApp\\ChattingApp.Core\\obj\\",
       "projectStyle": "PackageReference",
