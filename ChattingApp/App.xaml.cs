@@ -1,4 +1,5 @@
 ﻿using ChattingApp.Core;
+using Dna;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -39,6 +40,9 @@ namespace ChattingApp
         /// </summary>
         private void ApplicationSetup()
         {
+            // Setup the Dna Framework
+            Framework.Startup();
+
             // Setup IoC
             IoC.Setup();
 
