@@ -320,4 +320,3 @@ E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp
 E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\System.Threading.Tasks.Extensions.dll
 E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\System.ValueTuple.dll
 E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\appsettings.json
-E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\appsettings.Production.json

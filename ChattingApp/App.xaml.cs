@@ -51,7 +51,7 @@ namespace ChattingApp
             {
                 // TODO: Add applicationSettings so we can set/edit a log location
                 // For now just log to the path where this application is running
-                new FileLogger("log.txt"),
+                new Core.FileLogger("Oldlog.txt"),
             }));
 
             // Add our task manager
