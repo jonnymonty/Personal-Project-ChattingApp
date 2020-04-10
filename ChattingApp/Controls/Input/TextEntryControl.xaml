@@ -10,6 +10,7 @@
              >
     <!-- Grey underline -->
     <Border BorderBrush="{StaticResource ForegroundDarkBrush}"
+            IsEnabled="{Binding Working, Converter={local:BooleanInvertConverter}}"
             BorderThickness="0 0 0 0.4">
         <Grid Background="{StaticResource BackgroundVeryLightBrush}">
             
@@ -80,6 +81,8 @@
 
             <!-- Edit button container -->
             <Grid Grid.Column="2"
+                  HorizontalAlignment="Right"
+                  VerticalAlignment="Center"
                   local:AnimateFadeInProperty.Value="{Binding Editing, Converter={local:BooleanInvertConverter}}">
                 
                 <!-- Edit Button -->
@@ -95,6 +98,19 @@
                         FontSize="{StaticResource FontSizeSmall}"
                         VerticalAlignment="Center"
                         />
+
+            </Grid>
+
+            <!-- Working spinner container -->
+            <Grid Grid.Column="2"
+                  HorizontalAlignment="Right"
+                  VerticalAlignment="Center"
+                  local:AnimateFadeInProperty.Value="{Binding Working}">
+
+                <!-- Working Spinner -->
+                <Border Padding="0 0 5 0">
+                    <TextBlock Style="{StaticResource SpinningText}" />
+                </Border>
 
             </Grid>
 

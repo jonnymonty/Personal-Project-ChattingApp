@@ -62,6 +62,17 @@ namespace ChattingApp
         /// </summary>
         public bool Editing { get; set; }
 
+        /// <summary>
+        /// Indicates if the current control is pending an update (in progress)
+        /// </summary>
+        public bool Working { get; set; }
+
+        /// <summary>
+        /// The action to run when saving the text.
+        /// Returns true if the commit was successful or false if otherwise.
+        /// </summary>
+        public Func<Task<bool>> CommitAction { get; set; }
+
         #endregion
 
         #region Public Commands
@@ -135,55 +146,29 @@ namespace ChattingApp
         /// </summary>
         public void Save()
         {
-            // TODO: save the content
+            // Store the result of a commit call
+            var result = default(bool);
 
-            // Make sure current password is correct
-            // TODO: This will come from the back-end or by asking web server to confirm it
-            var storedPassword = "Testing";
-
-            // Confirm current password is a match
-            // NOTE: Typically done on the server not in code here
-            if (storedPassword != CurrentPassword.Unsecure())
+            RunCommandAsync(() => Working, async () =>
             {
-                // Let user know
-                UI.ShowMessage(new MessageBoxDialogViewModel
-                {
-                    Title = "Wrong password",
-                    Message = "The current password is invalid"
-                });
-                return;
-            }
+                // While working, come out of edit mode
+                Editing = false;
 
-            // Now check that the new and confirm password match
-            if (NewPassword.Unsecure() != ConfirmPassword.Unsecure())
+                // Try and do the work
+                result = CommitAction == null ? true : await CommitAction();
+
+            }).ContinueWith(t =>
             {
-                // Let user know
-                UI.ShowMessage(new MessageBoxDialogViewModel
+                // If we succeeded...
+                // Nothing to do
+                // If we fail...
+                if (!result)
                 {
-                    Title = "Password mismatch",
-                    Message = "The new and confirm password do not match"
-                });
-                return;
-            }
+                    // Go back into edit mode
+                    Editing = true;
+                }
 
-            // Now check that we have a password
-            if (NewPassword.Unsecure().Length == 0)
-            {
-                // Let user know
-                UI.ShowMessage(new MessageBoxDialogViewModel
-                {
-                    Title = "Password too short",
-                    Message = "You must enter a password!"
-                });
-                return;
-            }
-
-            // Set the edited password to the current value
-            CurrentPassword = new SecureString();
-            foreach (var c in NewPassword.Unsecure().ToCharArray())
-                CurrentPassword.AppendChar(c);
-
-            Editing = false;
+            });
         }
 
         #endregion
