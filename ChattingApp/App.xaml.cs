@@ -1,12 +1,10 @@
 ﻿using ChattingApp.Core;
 using Dna;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
+using Fasetto.Word.Relational;
 using System.Threading.Tasks;
 using System.Windows;
+using static ChattingApp.DI;
+using static Dna.FrameworkDI;
 
 namespace ChattingApp
 {
@@ -19,16 +17,20 @@ namespace ChattingApp
         /// Custom startup so we load our IoC immediately before anything else
         /// </summary>
         /// <param name="e"></param>
-        protected override void OnStartup(StartupEventArgs e)
+        protected override async void OnStartup(StartupEventArgs e)
         {
             // Let the base application do what it needs
             base.OnStartup(e);
 
             // Setup the main application
-            ApplicationSetup();
+            await ApplicationSetupAsync();
 
             // Log it
-            IoC.Logger.Log("Application starting...", LogLevel.Debug);
+            Logger.LogDebugSource("Application starting...");
+
+            // Setup the application view model based on if we are logged in
+            // If we are logged in... go to chat page... otherwise go to login page
+            ViewModelApplication.GoToPage(await ClientDataStore.HasCredentialsAsync() ? ApplicationPage.Chat : ApplicationPage.Login);
 
             // Show the main window
             Current.MainWindow = new MainWindow();
@@ -38,30 +40,21 @@ namespace ChattingApp
         /// <summary>
         /// Configures our application ready for use
         /// </summary>
-        private void ApplicationSetup()
+        private async Task ApplicationSetupAsync()
         {
             // Setup the Dna Framework
-            Framework.Startup();
+            Framework.Construct<DefaultFrameworkConstruction>()
+                .AddFileLogger()
+                .AddClientDataStore()
+                .AddFasettoWordViewModels()
+                .AddFasettoWordClientServices()
+                .Build();
 
-            // Setup IoC
-            IoC.Setup();
+            // Ensure the client data store
+            await ClientDataStore.EnsureDataStoreAsync();
 
-            // Bind a logger
-            IoC.Kernel.Bind<ILogFactory>().ToConstant(new BaseLogFactory(new[]
-            {
-                // TODO: Add applicationSettings so we can set/edit a log location
-                // For now just log to the path where this application is running
-                new Core.FileLogger("Oldlog.txt"),
-            }));
-
-            // Add our task manager
-            IoC.Kernel.Bind<ITaskManager>().ToConstant(new TaskManager());
-
-            // Bind a file manager
-            IoC.Kernel.Bind<IFileManager>().ToConstant(new FileManager());
-
-            // Bind a UI Manager
-            IoC.Kernel.Bind<IUIManager>().ToConstant(new UIManager());
+            // Load new settings
+            await ViewModelSettings.LoadAsync();
         }
     }
 }

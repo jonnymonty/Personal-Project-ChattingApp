@@ -1,4 +1,4 @@
-﻿using ChattingApp.Core;
+﻿using Dna;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows;
@@ -187,8 +187,13 @@ namespace ChattingApp
         /// </summary>
         public BasePage() : base()
         {
-            // Create a default view model
-            ViewModel = IoC.Get<VM>();
+            // If in design time mode...
+            if (DesignerProperties.GetIsInDesignMode(this))
+                // Just use a new instance of the VM
+                ViewModel = new VM();
+            else
+                // Create a default view model
+                ViewModel = Framework.Service<VM>();
         }
 
         /// <summary>
@@ -204,8 +209,15 @@ namespace ChattingApp
             }
             else
             {
-                // Create a default view model
-                ViewModel = IoC.Get<VM>();
+                // If in design time mode...
+                if (DesignerProperties.GetIsInDesignMode(this))
+                    // Just use a new instance of the VM
+                    ViewModel = new VM();
+                else
+                {
+                    // Create a default view model
+                    ViewModel = Framework.Service<VM>() ?? new VM();
+                }
             }
         }
 

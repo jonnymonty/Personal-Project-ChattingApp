@@ -1,1 +1,578 @@
-[11-26-2019 10:01:20] Dna Framework started in Development... [Framework.cs > Startup() > Line 129]
+[2020-04-04 12:30:32] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2020-04-04 12:30:33] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-04 12:30:33] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:33] An error occurred using the connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:33] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:33] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:30:33] Creating DbCommand for 'ExecuteNonQuery'.
+[2020-04-04 12:30:33] Created DbCommand for 'ExecuteNonQuery' (12ms).
+[2020-04-04 12:30:33] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+[2020-04-04 12:30:33] Executed DbCommand (103ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+[2020-04-04 12:30:33] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:30:33] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:33] DetectChanges starting for 'ClientDataStoreDbContext'.
+[2020-04-04 12:30:33] DetectChanges completed for 'ClientDataStoreDbContext'.
+[2020-04-04 12:30:33] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:33] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:30:33] Beginning transaction with isolation level 'Unspecified'.
+[2020-04-04 12:30:33] Began transaction with isolation level 'Serializable'.
+[2020-04-04 12:30:33] Creating DbCommand for 'ExecuteNonQuery'.
+[2020-04-04 12:30:33] Created DbCommand for 'ExecuteNonQuery' (5ms).
+[2020-04-04 12:30:33] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "LoginCredentials" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_LoginCredentials" PRIMARY KEY,
+    "Username" TEXT NULL,
+    "FirstName" TEXT NULL,
+    "LastName" TEXT NULL,
+    "Email" TEXT NULL,
+    "Token" TEXT NULL
+);
+[2020-04-04 12:30:33] Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "LoginCredentials" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_LoginCredentials" PRIMARY KEY,
+    "Username" TEXT NULL,
+    "FirstName" TEXT NULL,
+    "LastName" TEXT NULL,
+    "Email" TEXT NULL,
+    "Token" TEXT NULL
+);
+[2020-04-04 12:30:33] Committing transaction.
+[2020-04-04 12:30:34] Committing transaction.
+[2020-04-04 12:30:34] Disposing transaction.
+[2020-04-04 12:30:34] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:30:34] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:34] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-04 12:30:34] queryContext => new QueryingEnumerable<LoginCredentialsDataModel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, LoginCredentialsDataModel>, 
+    Fasetto.Word.Relational.ClientDataStoreDbContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+[2020-04-04 12:30:34] Creating DbCommand for 'ExecuteReader'.
+[2020-04-04 12:30:34] Created DbCommand for 'ExecuteReader' (6ms).
+[2020-04-04 12:30:34] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:34] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:30:34] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-04 12:30:34] Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-04 12:30:34] A data reader was disposed.
+[2020-04-04 12:30:34] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:30:34] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:34] Application starting... [App.xaml.cs > OnStartup() > Line 29]
+[2020-04-04 12:30:34] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-04 12:30:34] Creating DbCommand for 'ExecuteReader'.
+[2020-04-04 12:30:34] Created DbCommand for 'ExecuteReader' (6ms).
+[2020-04-04 12:30:34] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:30:34] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:30:34] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-04 12:30:34] Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-04 12:30:34] A data reader was disposed.
+[2020-04-04 12:30:34] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:30:34] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:37:09] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2020-04-04 12:37:09] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-04 12:37:10] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:37:10] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:37:10] Creating DbCommand for 'ExecuteScalar'.
+[2020-04-04 12:37:10] Created DbCommand for 'ExecuteScalar' (15ms).
+[2020-04-04 12:37:10] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:37:10] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:37:10] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-04 12:37:10] Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-04 12:37:10] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:37:10] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:37:10] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-04 12:37:10] queryContext => new QueryingEnumerable<LoginCredentialsDataModel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, LoginCredentialsDataModel>, 
+    Fasetto.Word.Relational.ClientDataStoreDbContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+[2020-04-04 12:37:10] Creating DbCommand for 'ExecuteReader'.
+[2020-04-04 12:37:10] Created DbCommand for 'ExecuteReader' (7ms).
+[2020-04-04 12:37:10] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:37:10] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:37:10] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-04 12:37:10] Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-04 12:37:10] A data reader was disposed.
+[2020-04-04 12:37:10] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:37:10] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:37:10] Application starting... [App.xaml.cs > OnStartup() > Line 29]
+[2020-04-04 12:37:10] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-04 12:37:10] Creating DbCommand for 'ExecuteReader'.
+[2020-04-04 12:37:10] Created DbCommand for 'ExecuteReader' (13ms).
+[2020-04-04 12:37:10] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-04 12:37:10] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:37:10] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-04 12:37:10] Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-04 12:37:10] A data reader was disposed.
+[2020-04-04 12:37:10] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-04 12:37:10] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 09:50:48] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2020-04-09 09:50:48] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 09:50:49] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 09:50:49] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 09:50:49] Creating DbCommand for 'ExecuteScalar'.
+[2020-04-09 09:50:49] Created DbCommand for 'ExecuteScalar' (18ms).
+[2020-04-09 09:50:49] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 09:50:49] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 09:50:49] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-09 09:50:49] Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-09 09:50:49] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 09:50:49] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 09:50:49] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 09:50:49] queryContext => new QueryingEnumerable<LoginCredentialsDataModel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, LoginCredentialsDataModel>, 
+    Fasetto.Word.Relational.ClientDataStoreDbContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+[2020-04-09 09:50:49] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 09:50:49] Created DbCommand for 'ExecuteReader' (6ms).
+[2020-04-09 09:50:49] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 09:50:49] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 09:50:49] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 09:50:49] Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 09:50:49] A data reader was disposed.
+[2020-04-09 09:50:49] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 09:50:49] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 09:50:49] Application starting... [App.xaml.cs > OnStartup() > Line 29]
+[2020-04-09 09:50:49] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 09:50:49] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 09:50:49] Created DbCommand for 'ExecuteReader' (7ms).
+[2020-04-09 09:50:49] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 09:50:49] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 09:50:49] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 09:50:49] Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 09:50:49] A data reader was disposed.
+[2020-04-09 09:50:49] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 09:50:49] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:00:06] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2020-04-09 10:00:07] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:00:07] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:00:07] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:00:07] Creating DbCommand for 'ExecuteScalar'.
+[2020-04-09 10:00:07] Created DbCommand for 'ExecuteScalar' (15ms).
+[2020-04-09 10:00:07] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:00:07] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:00:07] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-09 10:00:07] Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-09 10:00:07] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:00:07] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:00:07] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:00:08] queryContext => new QueryingEnumerable<LoginCredentialsDataModel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, LoginCredentialsDataModel>, 
+    Fasetto.Word.Relational.ClientDataStoreDbContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+[2020-04-09 10:00:08] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:00:08] Created DbCommand for 'ExecuteReader' (12ms).
+[2020-04-09 10:00:08] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:00:08] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:00:08] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:00:08] Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:00:08] A data reader was disposed.
+[2020-04-09 10:00:08] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:00:08] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:00:08] Application starting... [App.xaml.cs > OnStartup() > Line 29]
+[2020-04-09 10:00:08] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:00:08] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:00:08] Created DbCommand for 'ExecuteReader' (6ms).
+[2020-04-09 10:00:08] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:00:08] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:00:08] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:00:08] Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:00:08] A data reader was disposed.
+[2020-04-09 10:00:08] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:00:08] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:01:57] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2020-04-09 10:01:57] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:01:58] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:01:58] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:01:58] Creating DbCommand for 'ExecuteScalar'.
+[2020-04-09 10:01:58] Created DbCommand for 'ExecuteScalar' (16ms).
+[2020-04-09 10:01:58] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:01:58] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:01:58] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-09 10:01:58] Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-09 10:01:58] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:01:58] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:01:58] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:01:58] queryContext => new QueryingEnumerable<LoginCredentialsDataModel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, LoginCredentialsDataModel>, 
+    Fasetto.Word.Relational.ClientDataStoreDbContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+[2020-04-09 10:01:58] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:01:58] Created DbCommand for 'ExecuteReader' (6ms).
+[2020-04-09 10:01:58] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:01:58] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:01:58] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:01:58] Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:01:58] A data reader was disposed.
+[2020-04-09 10:01:58] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:01:58] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:01:58] Application starting... [App.xaml.cs > OnStartup() > Line 29]
+[2020-04-09 10:01:58] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:01:58] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:01:58] Created DbCommand for 'ExecuteReader' (10ms).
+[2020-04-09 10:01:58] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:01:58] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:01:58] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:01:58] Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:01:58] A data reader was disposed.
+[2020-04-09 10:01:58] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:01:58] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:22] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2020-04-09 10:03:23] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:03:23] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:23] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:23] Creating DbCommand for 'ExecuteScalar'.
+[2020-04-09 10:03:23] Created DbCommand for 'ExecuteScalar' (85ms).
+[2020-04-09 10:03:23] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:23] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:23] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-09 10:03:23] Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+[2020-04-09 10:03:23] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:23] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:23] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:03:24] queryContext => new QueryingEnumerable<LoginCredentialsDataModel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, LoginCredentialsDataModel>, 
+    Fasetto.Word.Relational.ClientDataStoreDbContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+[2020-04-09 10:03:24] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:03:24] Created DbCommand for 'ExecuteReader' (8ms).
+[2020-04-09 10:03:24] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:24] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:24] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:03:24] Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:03:24] A data reader was disposed.
+[2020-04-09 10:03:24] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:24] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:24] Application starting... [App.xaml.cs > OnStartup() > Line 29]
+[2020-04-09 10:03:24] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:03:24] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:03:24] Created DbCommand for 'ExecuteReader' (7ms).
+[2020-04-09 10:03:24] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:24] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:24] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:03:24] Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:03:24] A data reader was disposed.
+[2020-04-09 10:03:24] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:24] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:48] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:03:48] queryContext => new QueryingEnumerable<LoginCredentialsDataModel>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, LoginCredentialsDataModel>, 
+    Fasetto.Word.Relational.ClientDataStoreDbContext, 
+    DiagnosticsLogger<Query>
+)
+[2020-04-09 10:03:48] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:03:48] Created DbCommand for 'ExecuteReader' (14ms).
+[2020-04-09 10:03:48] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:48] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:48] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+[2020-04-09 10:03:48] Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+[2020-04-09 10:03:48] A data reader was disposed.
+[2020-04-09 10:03:48] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:48] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:48] 'ClientDataStoreDbContext' generated a value for the 'Id' property of new 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:03:48] Context 'ClientDataStoreDbContext' started tracking 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:03:48] SaveChanges starting for 'ClientDataStoreDbContext'.
+[2020-04-09 10:03:48] DetectChanges starting for 'ClientDataStoreDbContext'.
+[2020-04-09 10:03:48] DetectChanges completed for 'ClientDataStoreDbContext'.
+[2020-04-09 10:03:48] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:48] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:48] Beginning transaction with isolation level 'Unspecified'.
+[2020-04-09 10:03:48] Began transaction with isolation level 'Serializable'.
+[2020-04-09 10:03:48] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:03:48] Created DbCommand for 'ExecuteReader' (7ms).
+[2020-04-09 10:03:48] Executing DbCommand [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 16), @p2='?', @p3='?', @p4='?' (Size = 336), @p5='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "LoginCredentials" ("Id", "Email", "FirstName", "LastName", "Token", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2020-04-09 10:03:48] Executed DbCommand (49ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 16), @p2='?', @p3='?', @p4='?' (Size = 336), @p5='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "LoginCredentials" ("Id", "Email", "FirstName", "LastName", "Token", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2020-04-09 10:03:48] A data reader was disposed.
+[2020-04-09 10:03:48] Committing transaction.
+[2020-04-09 10:03:48] Committing transaction.
+[2020-04-09 10:03:48] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:49] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:49] Disposing transaction.
+[2020-04-09 10:03:49] An 'LoginCredentialsDataModel' entity tracked by 'ClientDataStoreDbContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:03:49] SaveChanges completed for 'ClientDataStoreDbContext' with 1 entities written to the database.
+[2020-04-09 10:03:49] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:03:49] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:03:49] Created DbCommand for 'ExecuteReader' (7ms).
+[2020-04-09 10:03:49] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:03:49] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:49] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:03:49] Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:03:49] Context 'ClientDataStoreDbContext' started tracking 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:03:49] A data reader was disposed.
+[2020-04-09 10:03:49] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:03:49] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:15] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:04:15] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:04:15] Created DbCommand for 'ExecuteReader' (10ms).
+[2020-04-09 10:04:15] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:15] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:15] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+[2020-04-09 10:04:15] Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+[2020-04-09 10:04:15] Context 'ClientDataStoreDbContext' started tracking 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:15] An 'LoginCredentialsDataModel' entity tracked by 'ClientDataStoreDbContext' changed from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:15] A data reader was disposed.
+[2020-04-09 10:04:15] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:15] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:15] 'ClientDataStoreDbContext' generated a value for the 'Id' property of new 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:15] Context 'ClientDataStoreDbContext' started tracking 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:15] SaveChanges starting for 'ClientDataStoreDbContext'.
+[2020-04-09 10:04:15] DetectChanges starting for 'ClientDataStoreDbContext'.
+[2020-04-09 10:04:15] DetectChanges completed for 'ClientDataStoreDbContext'.
+[2020-04-09 10:04:15] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:15] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:15] Beginning transaction with isolation level 'Unspecified'.
+[2020-04-09 10:04:15] Began transaction with isolation level 'Serializable'.
+[2020-04-09 10:04:15] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:04:15] Created DbCommand for 'ExecuteReader' (7ms).
+[2020-04-09 10:04:15] Executing DbCommand [Parameters=[@p0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "LoginCredentials"
+WHERE "Id" = @p0;
+SELECT changes();
+[2020-04-09 10:04:15] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "LoginCredentials"
+WHERE "Id" = @p0;
+SELECT changes();
+[2020-04-09 10:04:15] A data reader was disposed.
+[2020-04-09 10:04:15] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:04:15] Created DbCommand for 'ExecuteReader' (7ms).
+[2020-04-09 10:04:15] Executing DbCommand [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 15), @p2='?' (Size = 5), @p3='?' (Size = 5), @p4='?' (Size = 335), @p5='?' (Size = 5)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "LoginCredentials" ("Id", "Email", "FirstName", "LastName", "Token", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2020-04-09 10:04:15] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 15), @p2='?' (Size = 5), @p3='?' (Size = 5), @p4='?' (Size = 335), @p5='?' (Size = 5)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "LoginCredentials" ("Id", "Email", "FirstName", "LastName", "Token", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2020-04-09 10:04:15] A data reader was disposed.
+[2020-04-09 10:04:15] Committing transaction.
+[2020-04-09 10:04:15] Committing transaction.
+[2020-04-09 10:04:16] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:16] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:16] Disposing transaction.
+[2020-04-09 10:04:16] An 'LoginCredentialsDataModel' entity tracked by 'ClientDataStoreDbContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:16] An 'LoginCredentialsDataModel' entity tracked by 'ClientDataStoreDbContext' changed from 'Deleted' to 'Detached'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:16] SaveChanges completed for 'ClientDataStoreDbContext' with 2 entities written to the database.
+[2020-04-09 10:04:16] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:04:16] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:04:16] Created DbCommand for 'ExecuteReader' (8ms).
+[2020-04-09 10:04:16] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:16] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:16] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:04:16] Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:04:16] Context 'ClientDataStoreDbContext' started tracking 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:16] A data reader was disposed.
+[2020-04-09 10:04:16] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:16] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:25] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:04:25] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:04:26] Created DbCommand for 'ExecuteReader' (12ms).
+[2020-04-09 10:04:26] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:26] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:26] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+[2020-04-09 10:04:26] Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+[2020-04-09 10:04:26] Context 'ClientDataStoreDbContext' started tracking 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:26] An 'LoginCredentialsDataModel' entity tracked by 'ClientDataStoreDbContext' changed from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:26] A data reader was disposed.
+[2020-04-09 10:04:26] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:26] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:26] 'ClientDataStoreDbContext' generated a value for the 'Id' property of new 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:26] Context 'ClientDataStoreDbContext' started tracking 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:26] SaveChanges starting for 'ClientDataStoreDbContext'.
+[2020-04-09 10:04:26] DetectChanges starting for 'ClientDataStoreDbContext'.
+[2020-04-09 10:04:26] DetectChanges completed for 'ClientDataStoreDbContext'.
+[2020-04-09 10:04:26] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:26] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:26] Beginning transaction with isolation level 'Unspecified'.
+[2020-04-09 10:04:26] Began transaction with isolation level 'Serializable'.
+[2020-04-09 10:04:26] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:04:26] Created DbCommand for 'ExecuteReader' (7ms).
+[2020-04-09 10:04:26] Executing DbCommand [Parameters=[@p0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "LoginCredentials"
+WHERE "Id" = @p0;
+SELECT changes();
+[2020-04-09 10:04:26] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "LoginCredentials"
+WHERE "Id" = @p0;
+SELECT changes();
+[2020-04-09 10:04:26] A data reader was disposed.
+[2020-04-09 10:04:26] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:04:26] Created DbCommand for 'ExecuteReader' (11ms).
+[2020-04-09 10:04:26] Executing DbCommand [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 16), @p2='?', @p3='?', @p4='?' (Size = 336), @p5='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "LoginCredentials" ("Id", "Email", "FirstName", "LastName", "Token", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2020-04-09 10:04:26] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 16), @p2='?', @p3='?', @p4='?' (Size = 336), @p5='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "LoginCredentials" ("Id", "Email", "FirstName", "LastName", "Token", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2020-04-09 10:04:26] A data reader was disposed.
+[2020-04-09 10:04:26] Committing transaction.
+[2020-04-09 10:04:26] Committing transaction.
+[2020-04-09 10:04:26] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:26] Closed connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:26] Disposing transaction.
+[2020-04-09 10:04:26] An 'LoginCredentialsDataModel' entity tracked by 'ClientDataStoreDbContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:26] An 'LoginCredentialsDataModel' entity tracked by 'ClientDataStoreDbContext' changed from 'Deleted' to 'Detached'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:26] SaveChanges completed for 'ClientDataStoreDbContext' with 2 entities written to the database.
+[2020-04-09 10:04:26] Entity Framework Core 3.1.2 initialized 'ClientDataStoreDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2020-04-09 10:04:26] Creating DbCommand for 'ExecuteReader'.
+[2020-04-09 10:04:26] Created DbCommand for 'ExecuteReader' (11ms).
+[2020-04-09 10:04:26] Opening connection to database 'main' on server 'FasettoWord.db'.
+[2020-04-09 10:04:26] Opened connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:26] Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:04:26] Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "l"."Id", "l"."Email", "l"."FirstName", "l"."LastName", "l"."Token", "l"."Username"
+FROM "LoginCredentials" AS "l"
+LIMIT 1
+[2020-04-09 10:04:26] Context 'ClientDataStoreDbContext' started tracking 'LoginCredentialsDataModel' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2020-04-09 10:04:26] A data reader was disposed.
+[2020-04-09 10:04:26] Closing connection to database 'main' on server 'E:\Jonathan Monty\Documents\Desktop workspace\Sites\Personal-Project-ChattingApp\ChattingApp\bin\Debug\FasettoWord.db'.
+[2020-04-09 10:04:26] Closed connection to database 'main' on server 'FasettoWord.db'.

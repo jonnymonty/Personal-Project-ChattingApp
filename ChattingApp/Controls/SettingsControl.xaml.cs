@@ -1,5 +1,6 @@
 ﻿using ChattingApp.Core;
 using System.Windows.Controls;
+using static ChattingApp.DI;
 
 namespace ChattingApp
 {
@@ -13,7 +14,7 @@ namespace ChattingApp
             InitializeComponent();
 
             // Set data context to settings view model
-            DataContext = IoC.Settings;
+            DataContext = ViewModelSettings;
         }
     }
 }

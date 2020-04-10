@@ -1,4 +1,4 @@
-﻿<local:BasePage x:TypeArguments="core:RegisterViewModel"  x:Class="ChattingApp.RegisterPage"
+﻿<local:BasePage x:TypeArguments="local:RegisterViewModel"  x:Class="ChattingApp.RegisterPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -26,10 +26,14 @@
                             <!-- sign up subtext -->
                             <TextBlock Text="It's about to get fun" FontSize="{StaticResource FontSizeLarge}" Foreground="{StaticResource ForegroundDarkBrush}" Margin="0 0 0 20" />
 
+                            <!-- Username -->
+                            <TextBox Text="{Binding Username}" 
+                                     Tag="Username"
+                                     local:IsFocusedProperty.Value = "True" />
+
                             <!-- Email -->
                             <TextBox Text="{Binding Email}" 
-                                     Tag="Email"
-                                     local:IsFocusedProperty.Value = "True" />
+                                     Tag="Email" />
 
                             <!-- Password -->
                             <PasswordBox x:Name="PasswordText" Tag="Password" Margin="0 0 0 30"/>
